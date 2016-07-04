@@ -1,5 +1,5 @@
-# Another-VIM-configs
-My VIM configs
+# VIM config
+Мой VIM конфиг
 
 ## Install
 
