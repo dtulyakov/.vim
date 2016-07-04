@@ -46,3 +46,4 @@
 [submodule "vim-gitgutter"]
     path = bundle/vim-gitgutter
     url = https://github.com/airblade/vim-gitgutter.git
+
