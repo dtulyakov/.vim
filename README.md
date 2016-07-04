@@ -3,8 +3,7 @@ My VIM configs
 
 ## Install
 
-```
-#!BASH
+```bash
 
 git clone https://github.com/dtulyakov/.vim.git ~/.vim
 cd ~/.vim
