@@ -299,6 +299,13 @@ syn cluster pythonStringType contains=pythonString,pythonUniString,pythonRawStri
 syn cluster pythonNumberType contains=pythonNumber,pythonHexNumber,pythonFloat
 syn cluster pythonBuiltin    contains=pythonBuiltinObj,pythonBuiltinFunc
 
+syn match   pythonDefStatement  /^\s*\%(def\|class\)/
+       \ nextgroup=pythonFunction skipwhite
+syn region  pythonFunctionFold  start="^\z(\s*\)\%(def\|class\)\>"
+       \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
+
+hi link pythonDefStatement Statement
+
 if version >= 508 || !exists("did_python_syn_inits")
   if version <= 508
     let did_python_syn_inits = 1
