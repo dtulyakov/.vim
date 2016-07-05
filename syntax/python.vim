@@ -299,9 +299,9 @@ syn cluster pythonStringType contains=pythonString,pythonUniString,pythonRawStri
 syn cluster pythonNumberType contains=pythonNumber,pythonHexNumber,pythonFloat
 syn cluster pythonBuiltin    contains=pythonBuiltinObj,pythonBuiltinFunc
 
-syn match   pythonDefStatement  /^\s*\%(def\|class\)/
+syn match   pythonDefStatement  /^\s*\%(for\|def\|class\)/
        \ nextgroup=pythonFunction skipwhite
-syn region  pythonFunctionFold  start="^\z(\s*\)\%(def\|class\)\>"
+syn region  pythonFunctionFold  start="^\z(\s*\)\%(for\|def\|class\)\>"
        \ end="\ze\%(\s*\n\)\+\%(\z1\s\)\@!." fold transparent
 
 hi link pythonDefStatement Statement
