@@ -2,7 +2,8 @@ execute pathogen#infect()
 set t_Co=256
 " sudo apt-get install ncurses-term
 if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
+    colorscheme xoria256
+    "set term=gnome-256color
     set mouse=i
 else
 endif
@@ -19,7 +20,7 @@ if has("gui_running")
     set lines=40
     set columns=150
 else
-    colorscheme xoria256
+    "colorscheme xoria256
     set guifont=Ubuntu\ Mono\ 15
 endif
 
