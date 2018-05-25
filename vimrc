@@ -329,7 +329,7 @@ let g:airline_symbols.paste = 'ρ'
 "=====================================================
 let g:gitgutter_enabled = 1
 let g:gitgutter_signs = 1
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines = 0
 "=====================================================
 " настройка gitgutter боковая строка git изменений
 "=====================================================
